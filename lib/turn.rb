@@ -26,10 +26,10 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-  if board(position_taken[board,index]) == valid_move (board, index)
-    move
+  if (input_to_index() == !(position_taken?(board, index)) && index.between?(0, 8)) && !(board[index] == "O" || board[index] == "X")
+    board[input_to_index] = value
   else
-    board(position_taken[board,index]) != valid_move (board, index)
-    puts "Invalid Move"
+    puts "Please Enter a Valid Move"
+
   end
 end
