@@ -30,7 +30,7 @@ def turn(board)
   loop do
   if valid_move?(board, index)
     move(board, index)
-    display_board(move)
+    display_board(board)
   else
     puts "Please Enter a Valid Move"
     turn(board)
