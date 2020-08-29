@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-required_relative "../lib/turn.rb"
+require_relative "../lib/turn.rb"
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
