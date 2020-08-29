@@ -24,4 +24,10 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  input_to_index(user_input)
+  if board(position_taken) == valid_move
+    move
+  else
+    board(position_taken) != valid_move
+    puts "Invalid Move"
 end
