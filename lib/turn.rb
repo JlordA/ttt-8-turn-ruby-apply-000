@@ -27,11 +27,13 @@ def turn(board)
   user_input = gets.strip
   input_to_index(user_input)
   index = input_to_index(user_input)
+  loop do
   if valid_move?(board, index)
     move(board, index)
-    display_board(index)
+    display_board(move)
   else
     puts "Please Enter a Valid Move"
     turn(board)
+    break
   end
 end
