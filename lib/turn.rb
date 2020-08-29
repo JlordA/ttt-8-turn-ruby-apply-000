@@ -30,5 +30,6 @@ def turn(board)
     move(board, input_to_index, value = "X")
   else
     puts "Please Enter a Valid Move"
+    turn(board)
   end
 end
