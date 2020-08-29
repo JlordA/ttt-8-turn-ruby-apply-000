@@ -29,4 +29,5 @@ def turn(board)
   else
     board(position_taken) != valid_move
     puts "Invalid Move"
+  end
 end
